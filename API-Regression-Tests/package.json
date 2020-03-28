@@ -1,0 +1,24 @@
+{
+  "name": "api-regression-tests",
+  "version": "1.0.0",
+  "description": "This is API tests for Oxford Dictionaries",
+  "main": "index.js",
+  "scripts": {
+    "test:oxford:entries": "mocha ./specs/oxfordEntriesTests.spec.js -- --reporter mochawesome --reporter-options reportDir=./mochawesome-report,reportFilename=oxford-entries-report,reportTitle=\"Oxford Test Report\",reportPageTitle=\"Oxford Dictionary Entries Tests\",autoOpen=true,code=false --timeout 50000",
+    "test:oxford:translations": "mocha ./specs/oxfordTransTests.spec.js -- --reporter mochawesome --reporter-options reportDir=./mochawesome-report,reportFilename=oxford-translations-report,reportTitle=\"Oxford Test Report\",reportPageTitle=\"Oxford Dictionary Transalations Tests\",autoOpen=true,code=false --timeout 50000",
+    "test:oxford:all": "npm-run-all -sc test:oxford:entries test:oxford:translations"
+  },
+  "author": "Amjad Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "expect-mocha-snapshot": "^1.0.1",
+    "http-status": "^1.4.2",
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "url-join": "^4.0.1"
+  }
+}

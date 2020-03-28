@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-28T23:32:44.602Z",
+    "end": "2020-03-28T23:32:51.494Z",
+    "duration": 6892,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eea9c920-5bc4-4d76-a6bb-d42afedb2a72",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b30f3d48-e089-4d52-89c4-0d073a3ff686",
+          "title": "Oxford Dictionary Tests for Translations",
+          "fullFile": "/Users/aali/repositories/cba_test/cba_test/API-Regression-Tests/specs/oxfordTransTests.spec.js",
+          "file": "/specs/oxfordTransTests.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get translation for word test",
+              "fullTitle": "Oxford Dictionary Tests for Translations Get translation for word test",
+              "timedOut": false,
+              "duration": 3421,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/translations/en-gb/es/test\"\n  },\n  {\n    \"title\": \"API response\",\n    \"value\": \"prueba\"\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "58b40db8-3a84-4084-9a03-ae7ab48ffad8",
+              "parentUUID": "b30f3d48-e089-4d52-89c4-0d073a3ff686",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get translation for an invalid word ThisWordDoesNotExist",
+              "fullTitle": "Oxford Dictionary Tests for Translations Get translation for an invalid word ThisWordDoesNotExist",
+              "timedOut": false,
+              "duration": 1824,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/translations/en-gb/es/ThisWordDoesNotExist\"\n  },\n  {\n    \"title\": \"API response\",\n    \"value\": {\n      \"error\": \"No entry found matching supplied source_lang target_lang and word\"\n    }\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "6ae9299d-36a9-48b7-a8b7-6063b5ab75b4",
+              "parentUUID": "b30f3d48-e089-4d52-89c4-0d073a3ff686",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bad request on getting entries of word",
+              "fullTitle": "Oxford Dictionary Tests for Translations Bad request on getting entries of word",
+              "timedOut": false,
+              "duration": 1634,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/translations/en-gb/es/test\"\n  },\n  {\n    \"title\": \"API Options Params\",\n    \"value\": {\n      \"grammaticalFeatures\": \"UnknownFilter\"\n    }\n  },\n  {\n    \"title\": \"API response\",\n    \"value\": {\n      \"error\": \"Unknown filter value 'UnknownFilter' Please, consult valid values in the utility endpoints.\"\n    }\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "4f992003-0eb0-44ca-a3f7-61f0b6aa3604",
+              "parentUUID": "b30f3d48-e089-4d52-89c4-0d073a3ff686",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58b40db8-3a84-4084-9a03-ae7ab48ffad8",
+            "6ae9299d-36a9-48b7-a8b7-6063b5ab75b4",
+            "4f992003-0eb0-44ca-a3f7-61f0b6aa3604"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6879,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 50000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "oxford-translations-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./mochawesome-report",
+        "reportFilename": "oxford-translations-report",
+        "reportTitle": "Oxford Test Report",
+        "reportPageTitle": "Oxford Dictionary Transalations Tests",
+        "autoOpen": "true",
+        "code": "false"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

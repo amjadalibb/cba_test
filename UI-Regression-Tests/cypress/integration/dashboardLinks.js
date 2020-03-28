@@ -2,6 +2,8 @@ import dashboardUrls from '../fixtures/dashboardUrls.json';
 import viewports from '../fixtures/viewPorts.json';
 import { dashboardSelectors } from '../support/selectors';
 
+const breakPoint = 979;
+
 describe('Dashboard Page Navigation Verification', function () {
 	beforeEach(`Open Commbank Home Page`, function () {
 		cy.visit('/');
@@ -11,7 +13,7 @@ describe('Dashboard Page Navigation Verification', function () {
 		dashboardUrls.dashboardUrls.forEach((testItem) => {
 				it(testItem.title, () => {
 					cy.viewport(size.width, size.height);
-					if(size.width < 979 ) {
+					if(size.width < breakPoint ) {
 						cy.get(dashboardSelectors.mobileMenu).click();
 						cy.get(`${dashboardSelectors.mobileViewDiv} ${testItem.navButton}`).click();
 					}

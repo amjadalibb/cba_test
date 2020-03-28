@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-28T23:31:55.391Z",
+    "end": "2020-03-28T23:32:00.156Z",
+    "duration": 4765,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "07124cf1-165e-4b9c-bd5e-aa74940a2535",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1131144f-fad2-4e79-85a8-9b2b7cff5d60",
+          "title": "Oxford Dictionary Tests for Entries",
+          "fullFile": "/Users/aali/repositories/cba_test/cba_test/API-Regression-Tests/specs/oxfordEntriesTests.spec.js",
+          "file": "/specs/oxfordEntriesTests.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get entries of a word Insurance",
+              "fullTitle": "Oxford Dictionary Tests for Entries Get entries of a word Insurance",
+              "timedOut": false,
+              "duration": 2245,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/entries/en-gb/Insurance\"\n  },\n  {\n    \"title\": \"Origin\",\n    \"value\": [\n      \"late Middle English (originally as ensurance in the sense ‘ensuring, assurance, a guarantee’): from Old French enseurance, from enseurer (see ensure). insurance (sense 1) dates from the mid 17th century\"\n    ]\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "8f62210a-d9bc-4679-b9c8-30457b625f27",
+              "parentUUID": "1131144f-fad2-4e79-85a8-9b2b7cff5d60",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get entries of a invalid word ThisWordDoesNotExist",
+              "fullTitle": "Oxford Dictionary Tests for Entries Get entries of a invalid word ThisWordDoesNotExist",
+              "timedOut": false,
+              "duration": 1640,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/entries/en-gb/ThisWordDoesNotExist\"\n  },\n  {\n    \"title\": \"API response\",\n    \"value\": {\n      \"error\": \"No entry found matching supplied source_lang, word and provided filters\"\n    }\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "fb07a43e-7e72-4888-9d2c-801c007b7d92",
+              "parentUUID": "1131144f-fad2-4e79-85a8-9b2b7cff5d60",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bad request on getting entries of word",
+              "fullTitle": "Oxford Dictionary Tests for Entries Bad request on getting entries of word",
+              "timedOut": false,
+              "duration": 870,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"API Options BaseURL\",\n    \"value\": \"https://od-api.oxforddictionaries.com:443/api/v2\"\n  },\n  {\n    \"title\": \"API Options Endpoint\",\n    \"value\": \"/entries/en-gb/Insurance\"\n  },\n  {\n    \"title\": \"API Options Params\",\n    \"value\": {\n      \"grammaticalFeatures\": \"UnknownFilter\"\n    }\n  },\n  {\n    \"title\": \"API response\",\n    \"value\": {\n      \"error\": \"Unknown filter value 'UnknownFilter' for language 'en'. Please, consult valid values in the utility endpoints.\"\n    }\n  }\n]",
+              "code": "",
+              "err": {},
+              "uuid": "846b1baa-8d1a-428b-be07-9f85d7078216",
+              "parentUUID": "1131144f-fad2-4e79-85a8-9b2b7cff5d60",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f62210a-d9bc-4679-b9c8-30457b625f27",
+            "fb07a43e-7e72-4888-9d2c-801c007b7d92",
+            "846b1baa-8d1a-428b-be07-9f85d7078216"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4755,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 50000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "oxford-entries-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./mochawesome-report",
+        "reportFilename": "oxford-entries-report",
+        "reportTitle": "Oxford Test Report",
+        "reportPageTitle": "Oxford Dictionary Entries Tests",
+        "autoOpen": "true",
+        "code": "false"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

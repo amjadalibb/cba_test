@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Oxford Dictionary Tests for Translations Bad request on getting entries of word 1`] = `
+Object {
+  "error": "Unknown filter value 'UnknownFilter' Please, consult valid values in the utility endpoints.",
+}
+`;
+
+exports[`Oxford Dictionary Tests for Translations Get translation for an invalid word ThisWordDoesNotExist 1`] = `
+Object {
+  "error": "No entry found matching supplied source_lang target_lang and word",
+}
+`;
+
+exports[`Oxford Dictionary Tests for Translations Get translation for word test 1`] = `"prueba"`;

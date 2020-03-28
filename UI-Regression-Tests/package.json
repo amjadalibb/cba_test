@@ -1,7 +1,7 @@
 {
   "name": "ui-regression-tests",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is UI part of CBA Tests",
   "main": "index.js",
   "scripts": {
     "cypress:open": "node_modules/.bin/cypress open",
@@ -9,7 +9,7 @@
     "cypress:firefox": "node_modules/.bin/cypress run --browser firefox --spec 'cypress/integration/*'",
     "cypress:all": "npm-run-all -sc cypress:chrome cypress:firefox"
   },
-  "author": "",
+  "author": "Amjad Ali",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.2.0",

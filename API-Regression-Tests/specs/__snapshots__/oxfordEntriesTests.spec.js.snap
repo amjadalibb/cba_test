@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Oxford Dictionary Tests for Entries Bad request on getting entries of word 1`] = `
+Object {
+  "error": "Unknown filter value 'UnknownFilter' for language 'en'. Please, consult valid values in the utility endpoints.",
+}
+`;
+
+exports[`Oxford Dictionary Tests for Entries Get entries of a invalid word ThisWordDoesNotExist 1`] = `
+Object {
+  "error": "No entry found matching supplied source_lang, word and provided filters",
+}
+`;
+
+exports[`Oxford Dictionary Tests for Entries Get entries of a word Insurance 1`] = `
+Array [
+  "late Middle English (originally as ensurance in the sense ‘ensuring, assurance, a guarantee’): from Old French enseurance, from enseurer (see ensure). insurance (sense 1) dates from the mid 17th century",
+]
+`;

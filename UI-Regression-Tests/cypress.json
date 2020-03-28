@@ -1,0 +1,15 @@
+{
+	"chromeWebSecurity": false,
+	"baseUrl": "https://www.commbank.com.au/",
+	"requestTimeout": 10000,
+	"video": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+		"mochaFile": "mochawesome-result.xml",
+    "overwrite": true,
+    "toConsole": true,
+    "saveJson": true,
+		"html": true,
+		"autoOpen": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"dashboardUrls": [
+	{
+			"title": "Banking - CommBank",
+			"h1": "Banking",
+			"header": "//h1[contains(text(),\"Banking\")]",
+			"href": "/banking.html?ei=mv_banking",
+			"navButton": "a[title=\"Banking\"]"
+		},
+		{
+			"title": "Home loans, tips, tools, property search & more - CommBank",
+			"h1": "Home buying",
+			"header": "//h1[contains(text(),\"Home buying\")]",
+			"href": "/home-buying.html?ei=mv_home-buying",
+			"navButton": "a[title=\"Home buying\"]"
+		},
+		{
+			"title": "Insurance - CommBank",
+			"h1": "Insurance",
+			"header": "//h1[contains(text(),\"Insurance\")]",
+			"href": "/insurance.html?ei=mv_insurance",
+			"navButton": "a[title=\"Insurance\"]"
+		},
+		{
+			"title": "Investing & Super - CommBank",
+			"h1": "Investing & Super",
+			"header": "//h1[contains(text(),\"Investing & Super\")]",
+			"href": "/investing-and-super.html?ei=mv_investing-super",
+			"navButton": "a[title=\"Investing & super\"]"
+		},
+		{
+			"title": "Business - CommBank",
+			"h1": "Business banking",
+			"header": "//h1[contains(text(),\"Business\")]",
+			"href": "/business.html?ei=mv_business",
+			"navButton": "a[title=\"Business\"]"
+		},
+		{
+			"title": "Institutional - CommBank",
+			"h1": "Institutional banking",
+			"header": "//h1[contains(text(),\"Institutional\")]",
+			"href": "/institutional.html?ei=mv_institutional",
+			"navButton": "a[title=\"Institutional\"]"
+		}
+	]
+}

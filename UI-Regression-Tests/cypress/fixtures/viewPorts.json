@@ -1,0 +1,19 @@
+{
+	"sizes": [
+		{
+			"name": "iphone",
+			"width": 375,
+			"height": 667
+		},
+		{
+			"name": "ipad",
+			"width": 768,
+			"height": 1024
+		},
+		{
+			"name": "desktop",
+			"width": 1024,
+			"height": 768
+		}
+	]
+}

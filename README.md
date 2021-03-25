@@ -1,4 +1,4 @@
-# Cypress based UI test automation
+# Cypress UI Test Automation Framework and Node.js API Test Automation Framework for REST API
 
 This framework uses Cypress framework for UI test automation and REST API for API test automation
 

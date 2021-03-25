@@ -1,6 +1,6 @@
-# CBA Test Assignment
+# Cypress based UI test automation
 
-This is CBA Test for both API and UI
+This framework uses Cypress framework for UI test automation and REST API for API test automation
 
 ## UI Automation Framework
 
@@ -88,3 +88,4 @@ This framework executes api tests of Oxford Dictionaries (https://developer.oxfo
   ```
 * Generates report after running the test and saves it under `mochawesome-report` directory
 
+Contributer: Amjad Ali (amjadali_bb@hotmail.com)
